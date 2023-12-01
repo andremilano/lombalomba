@@ -12,6 +12,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- flowbite -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <!-- AOS JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -19,7 +21,7 @@
     <!-- navbar start -->
 
 
-    <nav class="bg-transparent border-gray-200 w-[100%] fixed">
+    <nav class="bg-transparent border-gray-200 w-[100%] fixed z-40">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
@@ -68,8 +70,11 @@
     <!-- Jumbotron start -->
     <section class="bg-[url('assets/img/bg-hero.svg')]">
         <div class="flex justify-between">
-            <img class="w-[300px] pt-40" src="assets/img/wayang1.svg" alt="Hero" />
-            <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+            <!-- wayang kiri -->
+            <div data-aos="fade-right">
+                <img class="w-[300px] pt-40" src="assets/img/wayang1.svg" alt="Hero" />
+            </div>
+            <div data-aos="zoom-in" class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
                 <div class="mx-auto max-w-xl text-center">
                     <h1 class="text-xl text-[#653312] font-bold sm:text-5xl ">
                         Explore and Preserve the Diversity of Wayang in Indonesia.
@@ -92,11 +97,51 @@
                     </div>
                 </div>
             </div>
-            <img class="w-[300px] pt-40" src="assets/img/wayang2.svg" alt="" />
+            <!-- wayang kanan -->
+            <div data-aos="fade-left">
+                <img class="w-[350px] pt-40" src="assets/img/wayang2.svg" alt="" />
+            </div>
         </div>
-        <img class="z-30 w-[100%] absolute -bottom-40" src="assets/img/awan1.svg" alt="">
+        <!-- awan bawah -->
+        <div class="flex" data-aos="fade-up" data-aos-anchor-placement="top-bottom">>
+            <img class="z-30 w-screen  absolute -bottom-40" src="assets/img/awan1.svg" alt="">
+        </div>
     </section>
     <!-- jumbotron end -->
+    <!-- new section start -->
+    <section class="bg-[#FFEFD8] h-screen">
+        <br><br><br><br><br><br><br>
+        <div class="flex justify-center p-5">
+            <div class="bg-[#F5E3CB]  rounded-lg p-4">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis exercitationem
+                    inventore reprehenderit optio explicabo aperiam provident, minus consectetur qui laborum quisquam
+                    voluptates ducimus repudiandae modi, in expedita magni earum!</h1>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis exercitationem
+                    inventore reprehenderit optio explicabo aperiam provident, minus consectetur qui laborum quisquam
+                    voluptates ducimus repudiandae modi, in expedita magni earum!</h1>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis exercitationem
+                    inventore reprehenderit optio explicabo aperiam provident, minus consectetur qui laborum quisquam
+                    voluptates ducimus repudiandae modi, in expedita magni earum!</h1>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis exercitationem
+                    inventore reprehenderit optio explicabo aperiam provident, minus consectetur qui laborum quisquam
+                    voluptates ducimus repudiandae modi, in expedita magni earum!</h1>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis exercitationem
+                    inventore reprehenderit optio explicabo aperiam provident, minus consectetur qui laborum quisquam
+                    voluptates ducimus repudiandae modi, in expedita magni earum!</h1>
+            </div>
+        </div>
+    </section>
+    <!-- section end -->
+
+
+
+    <!-- Javascript Libraries and Initiating -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     <script src="assets/script.js"></script>
 </body>
