@@ -4,9 +4,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'sans': ['Poppins', 'sans-serif'],
       'montserrat': ['Montserrat', 'sans-serif'],
-      'playfair': ['Playfair Display', 'serif'],
+      'playfair': ['Playfair Display SC', 'serif'],
     },
   },
   plugins: [],
