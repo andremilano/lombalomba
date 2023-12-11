@@ -221,13 +221,13 @@
                                     Explore the captivating world of Wayang in its various forms: 'Wayang Kulit' with its shadowy leather puppetry, 'Wayang Golek' showcasing colorful wooden puppets, 'Wayang Orang' featuring live actors in traditional roles, and 'Wayang Potehi' with its intricate glove puppet performances. Each style offers a unique glimpse into Indonesia's rich cultural storytelling.
                                 </p>
                             </div>
-                            <div class="w-3 relative">
+                            <div class="w-3 relative flex flex-row gap-3">
                                 <!-- If we need navigation buttons -->
-                                <div id="swiper-prev" class="swiper-button-prev swip-navigate wow fadeInUp border border-black rounded-full" data-wow-delay="2s" tabindex="0" role="button" aria-label="Previous slide" style="visibility: visible; animation-delay: 2s; animation-name: fadeInUp; --swiper-navigation-color: #fff">
-                                    <span class="icon-navigate"><i class="fas fa-arrow-left"></i></span>
+                                <div id="swiper-prev" class="swip-navigate wow fadeInUp border-2 border-[#653312] rounded-xl px-3 py-2 flex justify-center" data-wow-delay="2s" tabindex="0" role="button" aria-label="Previous slide" style="visibility: visible; animation-delay: 2s; animation-name: fadeInUp;">
+                                    <span class="icon-navigate"><i class="fas fa-arrow-left" style="color: #653312;"></i></span>
                                 </div>
-                                <div id="swiper-next" class="swiper-button-next swip-navigate wow fadeInUp border border-black rounded-full" data-wow-delay="2s" tabindex="0" role="button" aria-label="Next slide" style="visibility: visible; animation-delay: 2s; animation-name: fadeInUp; --swiper-navigation-color: #fff">
-                                    <span class="icon-navigate"><i class="fas fa-arrow-right"></i></span>
+                                <div id="swiper-next" class="swip-navigate wow fadeInUp border-2 border-[#653312] rounded-xl px-3 py-2 flex justify-center" data-wow-delay="2s" tabindex="0" role="button" aria-label="Next slide" style="visibility: visible; animation-delay: 2s; animation-name: fadeInUp;">
+                                    <span class="icon-navigate"><i class="fas fa-arrow-right" style="color: #653312;"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -290,8 +290,8 @@
 
             // Navigation arrows
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '#swiper-next',
+                prevEl: '#swiper-prev',
             },
         });
     </script>
