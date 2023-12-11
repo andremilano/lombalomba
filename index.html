@@ -11,10 +11,17 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="assets/img/logo-wayang.svg" type="image/x-icon">
-    <!-- flowbite -->
+    <!-- Flowbite -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
     <!-- AOS JS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper JS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!--Font Family-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
@@ -22,6 +29,7 @@
         nav {
             transition: .5s ease-in-out;
         }
+
     </style>
     <title>WAYANGE</title>
 </head>
@@ -166,16 +174,17 @@
                                         berbeda.
                                     </p>
                                 </div>
-                                <div
-                                    class="gap-[10px] w-full flex px-[16px] py-[12px] relative max-w-[149px] [border-top:5px_solid_#653312] box-border items-center [border-left:5px_solid_#653312] [border-right:5px_solid_#653312] [border-bottom:5px_solid_#653312] rounded-tl-[25px] rounded-br-[25px] rounded-tr-[25px] rounded-bl-[25px] justify-center bg-[#653312]">
-                                    <div class="w-full max-w-[auto] mt-0 min-h-[auto] text-left mb-0">
-                                        <button>
-                                            <p
-                                                class="text-[#ffffff] text-[16px] not-italic mt-0 text-left font-['Montserrat',_sans-serif] font-semibold leading-[24px] mb-0 tracking-[0px] normal-case">
-                                                Selengkapnya</p>
-                                        </button>
-                                    </div>
-                                </div>
+                                <a class="block flex flex-row font-[montserrat] font-semibold gap-3 w-[160px] justify-center rounded-full stroke-white bg-[#653312] px-4 py-3 border-4 border-yellow-900 text-sm font-medium text-white shadow hover:bg-[#8c522b] focus:outline-none focus:ring active:bg-red-500 md:w-auto"
+                                href="/get-started">
+                                Selengkapnya
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                    fill="none">
+                                        <path d="M16.958 9.77142H4.45801" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.917 4.75108L16.9587 9.77108L11.917 14.7919" stroke="white"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -190,20 +199,60 @@
         </div>
     </section>
     <!-- Section 2 end -->
-    <!-- new section start -->
+    <!-- Section 3 start -->
     <section class="bg-[#F5E3CB] h-screen">
-        <div class="flex justify-center  p-5">
-            <div class="bg-[#F5E3CB] w-screen  rounded-lg p-4 flex flex-row gap-3 justify-evenly">
+        <br><br><br><br><br>
+        <div class="flex justify-center p-[62px]">
+            <div class="bg-[#F5E3CB] w-screen  rounded-lg p-4 flex flex-col md:flex-row gap-3 justify-between">
+                <!-- konten kiri -->
                 <div>
-                    <h1>lahwdjhawdnanwd</h1>
+                    <div
+                        class="gap-[32px] w-full flex relative max-w-[583px] box-border items-start flex-col justify-start">
+                        <div class="w-full max-w-[auto] mt-0 min-h-[auto] text-left mb-0">
+                            <p
+                                class="text-[#653312] text-[48px] not-italic mt-0 text-left font-['Playfair_Display_SC',_serif] font-bold leading-[58px] mb-0 tracking-[0px] normal-case">
+                                Wayang’s Categories</p>
+                        </div>
+                        <div
+                            class="gap-[40px] w-full flex relative max-w-[583px] box-border items-start flex-col justify-start">
+                            <div class="w-full max-w-full mt-0 min-h-[209px] text-left mb-0">
+                                <p
+                                    class="text-[#ba7d54] text-[20px] not-italic mt-0 text-left font-['Montserrat',_sans-serif] font-normal leading-[30px] mb-0 tracking-[0px] normal-case">
+                                    Explore the captivating world of Wayang in its various forms: 'Wayang Kulit' with its shadowy leather puppetry, 'Wayang Golek' showcasing colorful wooden puppets, 'Wayang Orang' featuring live actors in traditional roles, and 'Wayang Potehi' with its intricate glove puppet performances. Each style offers a unique glimpse into Indonesia's rich cultural storytelling.
+                                </p>
+                            </div>
+                            <div class="w-3 relative">
+                                <!-- If we need navigation buttons -->
+                                <div id="swiper-prev" class="swiper-button-prev swip-navigate wow fadeInUp border border-black rounded-full" style="--swiper-navigation-color: #fff" data-wow-delay="2s" tabindex="0" role="button" aria-label="Previous slide" style="visibility: visible; animation-delay: 2s; animation-name: fadeInUp;">
+                                    <span class="icon-navigate"><i class="fas fa-arrow-left"></i></span>
+                                </div>
+                                <div id="swiper-next" class="swiper-button-next swip-navigate wow fadeInUp border border-black rounded-full" style="--swiper-navigation-color: #fff" data-wow-delay="2s" tabindex="0" role="button" aria-label="Next slide" style="visibility: visible; animation-delay: 2s; animation-name: fadeInUp;">
+                                    <span class="icon-navigate"><i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- karousel -->
                 <div>
-                    <h1>lahwdjhawdnanwd</h1>
+                    <div class="flex justify-center items-center w-[40vw]">
+                        <!-- Slider main container -->
+                        <div class="swiper w-full">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="assets/img/slide2-carousel.svg" alt=""></div>
+                            <div class="swiper-slide"><img src="assets/img/slide2-carousel.svg" alt=""></div>
+                            <div class="swiper-slide"><img src="assets/img/slide2-carousel.svg" alt=""></div>
+                            <div class="swiper-slide"><img src="assets/img/slide2-carousel.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- section end -->
+    <!-- Section 3 end -->
 
 
 
@@ -228,6 +277,23 @@
                 document.getElementById("navbar").style.background = "none";
             }
         }
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            cssMode: true,
+            direction: 'horizontal',
+            loop: true,
+            
+            slidesPerView: 2,
+            spaceBetween: 30,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     </script>
 </body>
 
