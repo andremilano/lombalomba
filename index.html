@@ -35,6 +35,33 @@
             transition: .5s ease-in-out;
         }
 
+        .swiper-slide-active {
+            -webkit-animation: scale-up-center 0.4s ease-in-out both;
+	                animation: scale-up-center 0.4s ease-in-out both;
+        }
+
+        @-webkit-keyframes scale-up-center {
+        0% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+        }
+        100% {
+            -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+        }
+        }
+        @keyframes scale-up-center {
+        0% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+        }
+        100% {
+            -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+        }
+        }
+
+
     </style>
     <title>WAYANGE</title>
 </head>
@@ -251,10 +278,10 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide"><img src="assets/img/slide1-carousel.svg" alt=""></div>
-                            <div class="swiper-slide"><img src="assets/img/slide2-carousel.svg" alt=""></div>
-                            <div class="swiper-slide"><img src="assets/img/slide3-carousel.svg" alt=""></div>
-                            <div class="swiper-slide"><img src="assets/img/slide4-carousel.svg" alt=""></div>
+                            <div class="swiper-slide rounded"><img src="assets/img/slide1-carousel.svg" alt=""></div>
+                            <div class="swiper-slide rounded"><img src="assets/img/slide2-carousel.svg" alt=""></div>
+                            <div class="swiper-slide rounded"><img src="assets/img/slide3-carousel.svg" alt=""></div>
+                            <div class="swiper-slide rounded"><img src="assets/img/slide4-carousel.svg" alt=""></div>
                             </div>
                         </div>
                     </div>
