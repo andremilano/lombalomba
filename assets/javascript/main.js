@@ -30,3 +30,18 @@ const swiper = new Swiper('.swiper', {
         prevEl: '#swiper-prev',
     },
 });
+//Swiper JS section 4
+const swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    slidesPerView: 2,
+    spaceBetween: 10,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '#swiper-next2',
+        prevEl: '#swiper-prev2',
+    },
+});
