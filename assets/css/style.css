@@ -21,6 +21,23 @@
             animation: transparent-brown-button 0.3s ease-in-out both;
         }
 
+        .fas {
+            color : #653312;
+        }
+
+        .fas:hover {
+            animation: brown-white-arrow 0.3s ease-in-out both;
+        }
+
+        @keyframes brown-white-arrow {
+            0% {
+                color: #653312;
+            }
+            100% {
+                color: #fff;
+            }
+        }
+
         @keyframes transparent-brown-underline {
             0% {
                 text-decoration-color: #65331200;

@@ -44,4 +44,7 @@ const swiper2 = new Swiper('.swiper2', {
         nextEl: '#swiper-next2',
         prevEl: '#swiper-prev2',
     },
+    pagination: {
+        el: '.swiper-pagination',
+    },
 });
