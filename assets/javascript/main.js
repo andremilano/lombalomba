@@ -36,8 +36,8 @@ const swiper2 = new Swiper('.swiper2', {
     direction: 'horizontal',
     loop: true,
 
-    slidesPerView: 2,
-    spaceBetween: 10,
+    slidesPerView: 3,
+    spaceBetween: 30,
 
     // Navigation arrows
     navigation: {
@@ -46,5 +46,6 @@ const swiper2 = new Swiper('.swiper2', {
     },
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
     },
 });
