@@ -17,16 +17,13 @@
             animation: brown-light-button 0.3s ease-in-out both;
         }
 
-        .button-tp:hover {
+        .button-tp:hover .fas {
             animation: transparent-brown-button 0.3s ease-in-out both;
+            animation: brown-white-arrow 0.3s ease-in-out both;
         }
 
         .fas {
             color : #653312;
-        }
-
-        .fas:hover {
-            animation: brown-white-arrow 0.3s ease-in-out both;
         }
 
         @keyframes brown-white-arrow {
