@@ -9,6 +9,42 @@
 	                animation: scale-up-center 0.4s ease-in-out both;
         }
 
+        .nav-item:hover {
+            animation: transparent-brown-underline 0.3s ease-in-out both;
+        }
+
+        .button-brown:hover {
+            animation: brown-light-button 0.3s ease-in-out both;
+        }
+
+        .button-tp:hover {
+            animation: transparent-brown-button 0.3s ease-in-out both;
+        }
+
+        @keyframes transparent-brown-underline {
+            0% {
+                text-decoration-color: #65331200;
+            }
+            100% {
+                text-decoration-color: #653312;
+            }
+        }
+        @keyframes brown-light-button {
+            0% {
+                background-color: #653312;
+            }
+            100% {
+                background-color: #8c522b;
+            }
+        }
+        @keyframes transparent-brown-button {
+            0% {
+                background-color: #ffffff00;
+            }
+            100% {
+                background-color: #8c522b;
+            }
+        }
         @-webkit-keyframes scale-up-center {
         0% {
             -webkit-transform: scale(1);
