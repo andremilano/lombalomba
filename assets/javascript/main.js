@@ -16,7 +16,7 @@ function burgerClick() {
 }
 
 //Swiper JS 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -26,8 +26,8 @@ const swiper = new Swiper('.swiper', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '#swiper-next',
-        prevEl: '#swiper-prev',
+        nextEl: '#swiper-next1',
+        prevEl: '#swiper-prev1',
     },
 });
 //Swiper JS section 4
@@ -36,8 +36,15 @@ const swiper2 = new Swiper('.swiper2', {
     direction: 'horizontal',
     loop: true,
 
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 2,
+    spaceBetween: 40,
+    breakpoints: {
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        }
+    },
 
     // Navigation arrows
     navigation: {
