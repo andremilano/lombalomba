@@ -34,6 +34,14 @@
         .swiper .swiper-pagination-bullet-active {
             color: #B88E2F;
             background: #B88E2F;
+            background-clip: content-box;
+            padding: 5px;
+            border: #B88E2F 1px solid;
+            border-radius: 50px;
+        }
+
+        #pagination-sec4 {
+            width: 200px;
         }
 
         @keyframes brown-white-arrow {
@@ -117,3 +125,39 @@
                       transform-origin: 50% 0%;
             }
           }
+          @-webkit-keyframes scale-up-top-sm {
+            0% {
+              -webkit-transform: scale(1);
+                      transform: scale(1);
+              -webkit-transform-origin: 50% 0%;
+                      transform-origin: 50% 0%;
+            }
+            100% {
+              -webkit-transform: scale(1.2);
+                      transform: scale(1.2);
+              -webkit-transform-origin: 50% 0%;
+                      transform-origin: 50% 0%;
+                      margin-right: 75px;
+            }
+          }
+          @keyframes scale-up-top-sm {
+            0% {
+              -webkit-transform: scale(1);
+                      transform: scale(1);
+              -webkit-transform-origin: 50% 0%;
+                      transform-origin: 50% 0%;
+            }
+            100% {
+              -webkit-transform: scale(1.2);
+                      transform: scale(1.2);
+              -webkit-transform-origin: 50% 0%;
+                      transform-origin: 50% 0%;
+                      margin-right: 75px;
+            }
+          }
+        @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+            .swiper2 .swiper-slide-active {
+                -webkit-animation: scale-up-top-sm 0.4s ease-in-out both;
+                        animation: scale-up-top-sm 0.4s ease-in-out both;
+            }
+        }
