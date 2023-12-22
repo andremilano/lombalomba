@@ -36,7 +36,7 @@
 
     <nav id="navbar" class="bg-white border-gray-200 w-[100%] fixed z-40">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="./" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="../" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="../assets/img/logo-wayang.svg" class="h-16" alt="Wayange Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap font-[playfair] text-yellow-900"><span
                         class="text-3xl">W</span>AYANGE</span>
@@ -78,27 +78,25 @@
 
     <!-- navbar End -->
     <!-- Jumbotron start -->
-    <section class="">
-        <div class="bg-[url('back.svg')] bg-center w-full  h-96">
+    <section class="w-full m-0 border border-blue-500">
+        <div class="bg-[url('back.svg')] bg-cover bg-center w-full h-96 border border-red-500">
             <!-- container -->
             <div class="flex flex-row justify-between">
                 <!-- tulisan -->
                 <div class="flex justify-start p-4 h-96 relative items-center">
                     <div class="absolute bottom-0 pl-4 w-[500px]">
                         <p
-                            class="text-[#ffffff] text-[64px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-bold leading-[96px] mb-0 tracking-[-2px] normal-case">
+                            class="text-[#ffffff] text-[40px] sm:text-[64px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-bold leading-[96px] mb-0 tracking-[-2px] normal-case">
                             Gatot Kaca</p>
                         <p
-                            class="text-[#ffffff] text-[32px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[48px] mb-0 pb-4 tracking-[-1px] normal-case">
+                            class="text-[#ffffff] text-[20px] sm:text-[32px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[48px] mb-0 pb-4 tracking-[-1px] normal-case">
                             Wayang Kulit - Jawa Tengah</p>
                     </div>
                 </div>
                 <!-- gambar kanan -->
-                <div class="">
-                    <div class="mt-32 mx-[88px]">
+                <div class="hidden lg:flex absolute right-10 bottom-80">
                         <img class="w-full h-auto m-0 block max-w-[328px] rounded-tl-[25px] rounded-br-[25px] rounded-tr-[25px] rounded-bl-[25px]"
                             src="wayang.svg" alt="">
-                    </div>
                 </div>
                 <!-- end container -->
             </div>
@@ -107,8 +105,8 @@
     </section>
     <!-- Jumbotron end -->
     <!-- information start -->
-    <section class="mt-[23px] pb-10">
-        <div class="px-8 flex flex-row gap-10">
+    <section class="mt-[23px] lg:mt-40 xl:mt-[23px] pb-10">
+        <div class="px-8 flex flex-col md:flex-row gap-10">
             <!-- gambar kanan -->
             <div>
                 <div class="py-4">
