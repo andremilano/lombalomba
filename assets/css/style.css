@@ -31,6 +31,10 @@
 	                animation: scale-up-top 0.4s ease-in-out both;
         }
 
+        .swiper2 .swiper-slide-active .carousel-anchor {
+            display: flex;
+        }
+
         .swiper .swiper-pagination-bullet-active {
             color: #B88E2F;
             background: #B88E2F;
