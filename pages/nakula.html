@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../assets/img/logo-wayang.svg" type="image/x-icon">
+    <!-- Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <!-- AOS JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Font Family-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        nav {
+            transition: .5s ease-in-out;
+        }
+    </style>
+    <title>WAYANGE WEBSITE</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+
+
+    <nav id="navbar" class="bg-white border-gray-200 w-[100%] fixed z-40">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="../" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="../assets/img/logo-wayang.svg" class="h-16" alt="Wayange Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap font-[playfair] text-yellow-900"><span
+                        class="text-3xl">W</span>AYANGE</span>
+            </a>
+            <button id="navbar-burger" data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false" onclick="burgerClick()">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block sm:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+                    <li>
+                        <a href="../#"
+                            class="nav-item block py-2 px-3 font-['montserrat'] text-lg font-bold rounded md:bg-transparent hover:bg-gray-100 text-yellow-900 md:p-0 md:hover:bg-transparent  md:hover:underline active:font-bold"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="../#profile"
+                            class="nav-item block py-2 px-3 text-yellow-900 font-['montserrat'] text-lg font-medium rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline active:font-bold md:p-0 ">Profiles</a>
+                    </li>
+                    <li>
+                        <a href="../#categories"
+                            class="nav-item block py-2 px-3 text-yellow-900 font-['montserrat'] text-lg font-medium rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline active:font-bold md:p-0  ">Categories</a>
+                    </li>
+                    <li>
+                        <a href="../#characters"
+                            class="nav-item block py-2 px-3 text-yellow-900 font-['montserrat'] text-lg font-medium rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline active:font-bold md:p-0 ">Characters</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar End -->
+    <!-- Jumbotron start -->
+    <section class="w-full m-0 p-0 h-full">
+        <div class="bg-[url('back.svg')] bg-cover bg-center w-full h-96">
+            <!-- container -->
+            <div class="flex flex-row justify-between">
+                <!-- tulisan -->
+                <div class="flex justify-start p-4 h-96 relative items-center">
+                    <div class="absolute bottom-0 pl-4 w-[500px]">
+                        <p
+                            class="text-[#ffffff] text-[40px] sm:text-[64px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-bold leading-[96px] mb-0 tracking-[-2px] normal-case">
+                            Nakula</p>
+                        <p
+                            class="text-[#ffffff] text-[20px] sm:text-[32px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[48px] mb-0 pb-4 tracking-[-1px] normal-case">
+                            Wayang Kulit - Jawa Tengah</p>
+                    </div>
+                </div>
+                <!-- gambar kanan -->
+                <div class="hidden lg:flex absolute right-10 xl:bottom-40 bottom-80">
+                        <img class="w-full h-auto m-0 block max-w-[328px] rounded-tl-[25px] rounded-br-[25px] rounded-tr-[25px] rounded-bl-[25px]"
+                            src="wayang.svg" alt="">
+                </div>
+                <!-- end container -->
+            </div>
+        </div>
+
+    </section>
+    <!-- Jumbotron end -->
+    <!-- information start -->
+    <section class="mt-[23px] lg:mt-40 xl:mt-[23px] pb-10">
+        <div class="px-8 flex flex-col md:flex-row gap-10">
+            <!-- gambar kiri -->
+            <div>
+                <div class="py-4">
+                    <p class="font-['Inter', sans-serif] text-zinc-900 text-xl leading-[30px]"><a class="border-b border-black hover:text-gray-500" href="../">Landing Page</a> / Wayang Gatotkaca</p>
+                </div>
+                <div>
+                    <img class="max-w-[358px]" src="wayang2.svg" alt="">
+                </div>
+            </div>
+            <!-- tulisan -->
+            <div class="flex justify-left items-center w-[500px]">
+                <div>
+                    <div class="w-full">
+                        <p class="text-[32px] font-['DM Sans', sans-serif] font-bold">Sejarah Wayang Nakula</p>
+                    </div>
+                    <div>
+                        <p
+                            class="text-[#777e90] text-[20px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[30px] mb-0 tracking-[-1px] normal-case">
+                            Gatotkaca adalah tokoh dalam wayang kulit, sebuah seni pertunjukan
+                            tradisional Indonesia yang menggunakan boneka kulit dan bayangan untuk
+                            menceritakan cerita epik, terutama Mahabharata. Berikut adalah beberapa
+                            poin terkait sejarah wayang kulit Gatotkaca:
+                        </p>
+                        <p
+                            class="text-[#777e90] list-item ml-5 text-[20px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[30px] mb-0 tracking-[-1px] normal-case">
+                             Gatotkaca berasal dari epik Mahabharata, yang membahas pertempuran antara
+                            keluarga Kuru.
+                        </p>
+                        <p
+                            class="text-[#777e90] list-item ml-5 text-[20px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[30px] mb-0 tracking-[-1px] normal-case">
+                             Cerita Mahabharata dibawa ke Indonesia oleh pedagang dan pendeta Hindu
+                            dari India pada abad ke-1 hingga ke-4 Masehi.
+                        </p>
+                        <p
+                            class="text-[#777e90] list-item ml-5 text-[20px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[30px] mb-0 tracking-[-1px] normal-case">
+                             Wayang kulit muncul di Pulau Jawa pada abad ke-10 hingga ke-11 Masehi dan
+                            berkembang sebagai seni pertunjukan
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Information End -->
+    <!-- Footer Start -->
+    <section>
+        <div class=" h-auto mt-[10rem] pb-10 sm:pb-0 sm:mt-10">
+            <!-- container -->
+            <div class="flex justify-between md:flex-row flex-col">
+                <!-- konten kiri -->
+                <div class="px-[62px] py-4 flex flex-row justify-center">
+                    <!-- logo -->
+                    <div class="flex justify-center items-center">
+                        <div>
+                            <img src="assets/img/logo-wayang.svg" class="h-[50px]" alt="">
+                        </div>
+                    </div>
+                    <!-- title -->
+                    <div class="flex justify-center items-center">
+                        <div class="justify-center items-center ml-2">
+                            <h1
+                                class="text-[#653312] text-[24px] not-italic mt-0 text-left font-['Playfair_Display_SC',_serif] font-bold mb-0 tracking-[0px] normal-case">
+                                Wayange</h1>
+                        </div>
+                    </div>
+                    <!-- text -->
+                    <div class="flex justify-center items-center px-4 ">
+                        <div>
+                            <p
+                                class="text-[#5c5c5c] text-[16px] not-italic mt-0 text-left font-['Montserrat',_sans-serif] font-normal leading-[22px] mb-0 tracking-[0px] normal-case">
+                                @ 2023 Soller, Inc. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end konten kiri -->
+                <!-- konten kanan -->
+                <div class="flex justify-center items-center">
+                    <div class="flex flex-row gap-10 px-[62px] text-lg">
+                        <p>Terms</p>
+                        <p>Privacy</p>
+                        <p>Support</p>
+                    </div>
+                </div>
+                <!-- end konten kanan -->
+            </div>
+            <!-- container end -->
+        </div>
+    </section>
+    <!-- Footer End -->
+
+
+    <!-- Javascript Libraries and Initiating -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <!-- main JS  -->
+    <script src="assets/javascript/main.js"></script>
+</body>
+
+</html>
