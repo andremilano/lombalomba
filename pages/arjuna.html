@@ -21,13 +21,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!--Font Family-->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-        nav {
-            transition: .5s ease-in-out;
-        }
-    </style>
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>WAYANGE WEBSITE</title>
 </head>
 
@@ -56,22 +50,41 @@
                 <ul
                     class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
                     <li>
-                        <a href="../#"
-                            class="nav-item block py-2 px-3 font-['montserrat'] text-lg font-bold rounded md:bg-transparent hover:bg-gray-100 text-yellow-900 md:p-0 md:hover:bg-transparent  md:hover:underline active:font-bold"
-                            aria-current="page">Home</a>
-                    </li>
-                    <li>
-                        <a href="../#profile"
-                            class="nav-item block py-2 px-3 text-yellow-900 font-['montserrat'] text-lg font-medium rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline active:font-bold md:p-0 ">Profiles</a>
-                    </li>
-                    <li>
-                        <a href="../#categories"
-                            class="nav-item block py-2 px-3 text-yellow-900 font-['montserrat'] text-lg font-medium rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline active:font-bold md:p-0  ">Categories</a>
-                    </li>
-                    <li>
-                        <a href="../#characters"
-                            class="nav-item block py-2 px-3 text-yellow-900 font-['montserrat'] text-lg font-medium rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline active:font-bold md:p-0 ">Characters</a>
-                    </li>
+                        <a
+                          href="../#"
+                          class="nav-item block py-2 px-3 font-[manrope] text-lg font-bold rounded md:bg-transparent hover:bg-gray-100 text-yellow-900 md:p-0 md:hover:bg-transparent md:hover:underline active:font-bold"
+                          aria-current="page"
+                          >Beranda</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../#about"
+                          class="nav-item block py-2 px-3 text-yellow-900 font-[manrope] text-lg font-medium rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline active:font-bold md:p-0"
+                          >Tentang</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../#characters"
+                          class="nav-item block py-2 px-3 text-yellow-900 font-[manrope] text-lg font-medium rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline active:font-bold md:p-0"
+                          >Karakter</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../#museum"
+                          class="nav-item block py-2 px-3 text-yellow-900 font-[manrope] text-lg font-medium rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline active:font-bold md:p-0"
+                          >Museum</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../#berita"
+                          class="nav-item block py-2 px-3 text-yellow-900 font-[manrope] text-lg font-medium rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline active:font-bold md:p-0"
+                          >Berita</a
+                        >
+                      </li>
                 </ul>
             </div>
         </div>
@@ -88,63 +101,105 @@
                     <div class="absolute bottom-0 pl-4 w-[300px] sm:w-[500px]">
                         <p
                             class="text-[#ffffff] text-[40px] sm:text-[64px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-bold leading-[96px] mb-0 tracking-[-2px] normal-case">
-                            Arjuna</p>
+                            Gatot Kaca</p>
                         <p
                             class="text-[#ffffff] text-[20px] sm:text-[32px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[48px] mb-0 pb-4 tracking-[-1px] normal-case">
                             Wayang Kulit - Jawa Tengah</p>
                     </div>
                 </div>
                 <!-- gambar kanan -->
-                <div class="hidden lg:flex absolute right-10 xl:bottom-40 bottom-80">
-                    <img class="w-full h-auto m-0 block max-w-[328px] rounded-tl-[25px] rounded-br-[25px] rounded-tr-[25px] rounded-bl-[25px]"
-                        src="wayang.svg" alt="">
-                </div>
                 <!-- end container -->
             </div>
         </div>
-
     </section>
     <!-- Jumbotron end -->
     <!-- information start -->
     <section class="mt-[23px] lg:mt-40 xl:mt-[23px] pb-10">
-        <div class="px-8 flex flex-col md:flex-row gap-10">
-            <!-- gambar kiri -->
+        <div class="m-10">
+            <!-- header artikel -->
             <div>
-                <div class="py-4">
-                    <p class="font-['Inter', sans-serif] text-zinc-900 text-xl leading-[30px]"><a
-                            class="border-b border-black hover:text-gray-500" href="../">Landing Page</a> / Wayang
-                        Arjuna</p>
-                </div>
-                <div class="w-[200px] h-[250px] sm:w-[350px] sm:h-[450px] bg-[url('../assets/img/arjuna.webp')] bg-cover bg-center">
-                </div>
-            </div>
-            <!-- tulisan -->
-            <div class="flex justify-left items-center max-w-[500px]">
-                <div>
-                    <div class="w-full">
-                        <p class="text-[32px] font-['DM Sans', sans-serif] font-bold">History of Wayang Arjuna</p>
-                    </div>
-                    <div>
-                        <p class="text-[#777e90] text-[20px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[30px] mb-0 tracking-[-1px] normal-case">
-                            Arjuna, one of the main characters in the Indonesian shadow puppetry art form known as wayang kulit, has roots in the epic Mahabharata, a grand tale that revolves around the battle between two major groups, the Pandavas and the Kauravas. Here are some points related to the history of Arjuna in wayang kulit:
-                        </p>
-                        <p class="text-[#777e90] list-item ml-5 text-[20px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[30px] mb-0 tracking-[-1px] normal-case">
-                            Arjuna, the skilled warrior from the Mahabharata, is depicted in wayang kulit as a symbol of courage and loyalty.
-                        </p>
-                        <p class="text-[#777e90] list-item ml-5 text-[20px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[30px] mb-0 tracking-[-1px] normal-case">
-                            Arjuna continues to evolve in wayang kulit with the addition of local nuances, becoming not only entertainment but also a symbol of Indonesia's cultural heritage.
-                        </p>
-                        <p class="text-[#777e90] list-item ml-5 text-[20px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[30px] mb-0 tracking-[-1px] normal-case">
-                            Wayang kulit, a performance art based on leather and shadows, emerged on the island of Java in the 10th to 11th centuries AD.
-                        </p>                        
-                    </div>
+                <div class="w-full max-w-[1257px] mt-0 min-h-[auto] text-left mb-0">
+                    <p
+                        class="text-[#000000] text-[24px] md:text-[48px] not-italic mt-0 text-left font-['Manrope',_sans-serif] font-bold mb-0 tracking-[-1px] normal-case">
+                        Sejarah Wayang Gatotkaca serta Unsur Kearifan Lokal dalam Pertunjukan
+                        Tradisional
+                    </p>
                 </div>
             </div>
+            <!-- tulisan artikel -->
+            <div class="mt-5">
+                <div
+                    class="gap-[48px] w-full flex relative max-w-[1314px] box-border items-start flex-col justify-start">
+                    <div
+                        class="gap-[50px] w-full flex flex-col md:flex-row max-w-[1314px] box-border items-start justify-start">
+                        <div class="w-full max-w-[632px] mt-0 min-h-[auto] text-left mb-0">
+                            <p
+                                class="text-[#4d4d4d] text-[20px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[30px] mb-0 tracking-[-1px] normal-case">
+                                Wayang Gatotkaca adalah salah satu tokoh dalam seni pertunjukan
+                                tradisional Indonesia yang dikenal sebagai wayang kulit. Wayang kulit
+                                merupakan seni teater tradisional yang menggunakan boneka kulit yang
+                                diproyeksikan ke layar putih dengan bantuan sinar lampu. Wayang
+                                Gatotkaca adalah salah satu tokoh pewayangan yang terkenal dan
+                                memiliki peran penting dalam epik Mahabharata, salah satu kisah besar
+                                dalam mitologi Hindu.
+                            </p>
+                        </div>
+                        <div class="w-full max-w-[632px] mt-0 min-h-[auto] text-left mb-0">
+                            <p
+                                class="text-[#4d4d4d] text-[20px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[30px] mb-0 tracking-[-1px] normal-case">
+                                Gatotkaca adalah putra dari Bima, salah satu tokoh pahlawan dalam
+                                Mahabharata. Ia memiliki kekuatan luar biasa dan dikenal sebagai
+                                pahlawan yang berani dan setia. Selain keberaniannya dalam
+                                pertempuran, Gatotkaca juga dikenal karena kesaktiannya, terutama
+                                dalam bidang kebal senjata. Ia sering dianggap sebagai simbol
+                                keberanian, kesetiaan, dan kekuatan dalam perjuangan melawan
+                                kejahatan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full max-w-[632px] mt-0 min-h-[auto] text-left mb-0">
+                        <p
+                            class="text-[#4d4d4d] text-[20px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[30px] mb-0 tracking-[-1px] normal-case">
+                            Dalam pertunjukan wayang kulit, Wayang Gatotkaca sering digambarkan
+                            dengan wajah yang gagah, tubuh yang besar dan kuat, serta
+                            senjata-senjata khasnya seperti tombak atau gada. Pertunjukan wayang
+                            kulit tidak hanya menghibur tetapi juga sering mengandung pesan moral
+                            dan ajaran-ajaran kehidupan.
+                        </p>
+                        <p
+                            class="text-[#4d4d4d] text-[20px] not-italic mt-0 text-left font-['Inter',_sans-serif] font-normal leading-[30px] mb-0 tracking-[-1px] normal-case">
+                            Wayang Gatotkaca menjadi bagian penting dari warisan budaya Indonesia
+                            dan terus diperankan dalam berbagai pertunjukan wayang kulit di seluruh
+                            nusantara. Keberadaannya tidak hanya memperkaya seni pertunjukan
+                            tradisional Indonesia tetapi juga mencerminkan nilai-nilai kebijaksanaan
+                            dan kearifan lokal yang terkandung dalam budaya Indonesia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end artikel -->
+            <!-- gambar wayang start -->
+            <div class="flex flex-col md:flex-row justify-between mt-10">
+                <!-- wayang kiri -->
+                <div class="my-4">
+                    <img class="h-auto" src="wayang-kiri-besar.png" alt="">
+                </div>
+                <!-- wayang kanan -->
+                <div class="flex-col">
+                    <div class="mb-4 md:-mt-96">
+                        <img class="h-auto" src="wayang-new.png" alt="">
+                    </div>
+                    <div class="my-4">
+                        <img class="h-auto" src="wayang-kotak.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- gambar wayang end -->
         </div>
     </section>
     <!-- Information End -->
     <!-- Footer Start -->
-    <section>
+    <footer>
         <div class=" h-auto mt-[10rem] pb-10 sm:pb-0 sm:mt-10">
             <!-- container -->
             <div class="flex justify-between md:flex-row flex-col">
@@ -153,7 +208,7 @@
                     <!-- logo -->
                     <div class="flex justify-center items-center">
                         <div>
-                            <img src="assets/img/logo-wayang.svg" class="h-[50px]" alt="">
+                            <img src="../assets/img/logo-wayang.svg" class="h-[60px] md:h-[50px]" alt="">
                         </div>
                     </div>
                     <!-- title -->
@@ -169,7 +224,7 @@
                         <div>
                             <p
                                 class="text-[#5c5c5c] text-[16px] not-italic mt-0 text-left font-['Montserrat',_sans-serif] font-normal leading-[22px] mb-0 tracking-[0px] normal-case">
-                                @ 2023 Soller, Inc. All rights reserved</p>
+                                @ 2023 MabaOP, Inc. All rights reserved</p>
                         </div>
                     </div>
                 </div>
@@ -186,7 +241,7 @@
             </div>
             <!-- container end -->
         </div>
-    </section>
+    </footer>
     <!-- Footer End -->
 
 
