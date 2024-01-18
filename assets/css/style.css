@@ -52,7 +52,7 @@
         }
 
         .rotate-ani-3:hover {
-            animation: rotate-3 0.2s ease-in-out both;
+            animation: rotate-3 0.1s ease-in-out both;
         }
 
         @keyframes rotate-3 {
